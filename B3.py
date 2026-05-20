@@ -11,9 +11,9 @@ print("--- KIOSK NHAP LIEU NHAN SU SO ---")
 for i in range(1, 4):
     print(f"\n--- Nhan vien {i} ---")
     
-    employee_id = input("Ma nhan vien: ")
-    full_name = input("Ho va ten: ")
-    department = input("Phong ban: ")
+    employee_id = input("Ma nhan vien: ").strip()
+    full_name = input("Ho va ten: ").strip()
+    department = input("Phong ban: ").strip()
     
     if not employee_id or not full_name:
         print("[CANH BAO] Du lieu ten hoac ma khong hop le! Huy bo tao ho so cho nhan vien nay.")
